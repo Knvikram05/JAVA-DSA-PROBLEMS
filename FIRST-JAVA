@@ -1,0 +1,153 @@
+//ODD OR EVEN
+import java.util.Scanner;
+public class EvenorOdd{
+public static void main(srting args[]){
+Scannerinput = newScanner(system.in);
+int num = input.nextint();
+if (num %2==0){
+   system.out.println("Given Number is EVEN");
+}else{
+   system.out.println("Given Number is ODD")
+}
+}
+}
+
+
+//GREETING
+import java.util.Scanner;
+public class greetingMessage{
+public static void main(string args[]){
+Scannerinput = newScanner(system.in);
+string name = input.nextline();
+sytem.out.println("hello"+name);
+} 
+}
+
+//LARGEST NUM OF 2 NUMBER
+import java.util.Scanner;
+public class largestNumber{
+public static void main(String arys[]){
+Scannerinput = newScanner(System.in);
+int num1 = input.nextint();
+int num2 = input.nextint();
+if(num1<num2){
+   System.out.println(num2+"is the largest number");
+}
+else{
+   System.out.println(num1+"is the largest number");
+}
+}
+}
+
+
+//SIMPLE INTEREST
+import java.util.Scanner;
+public class SimpleInterest{
+public static void main (Sting args[]){
+Scanner input = newScanner(system.in);
+double principal = scanner.nextdouble();
+double time = scanner.nextdouble();
+double rate = scanner.nextdouble();
+double interest = (principal*time*rate)/100;
+System.out.println("Simple interest"+interest);
+
+}
+}
+
+
+//CALCULATOR
+inport java.util.Scanner;
+public class Calculator{
+public static void main (string args[]){
+Scanner input = newScanner(system.in);
+System.out.println("Enter the numbers:");
+double num1 = Scanner.nextdouble();
+double num2 = Scanner.nextdouble();
+System.out.println("Enter the operator(+,-,*,/)");
+char operator = Scanner.next().charAt(0);
+double result = 0;
+
+if(operator == '+'){
+   result = num1+num2;
+}elseif(operator =='-'){
+   result = num1-num2;
+}elseif(operator == '*'){
+   result = num1*num2;
+}elseif(operator == '/'){
+  if (num2 !=0){
+        result = num1/num2;
+} else{
+  System.outprintln("error! Division by zero.");
+   return;
+}
+   
+} else {
+   System.out.println( "Invalid operator!");
+   return;
+}
+
+System.outr.println("Result:"+result);
+   
+}
+}
+
+
+
+//CONVERTION OF RUPEES TO USD
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter amount in rupees:");
+        double rupees = scanner.nextDouble();
+        double usdRate = 0.014; // Conversion rate from rupees to USD
+        double usdAmount = rupees * usdRate;
+        System.out.println("Amount in USD: " + usdAmount);
+    }
+}
+
+
+
+
+//PALINDROME
+import java.util.Scanner;
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a string to check if it's a palindrome:");
+        String str = scanner.next();
+
+        if (isPalindrome(str)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
+    }
+
+    public static boolean isPalindrome(String str) {
+        int i = 0, j = str.length() - 1;
+        while (i < j) {
+            if (str.charAt(i) != str.charAt(j)) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
