@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AOC {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         System.out.println("Enter the Radius of the Circle:");
         double radius = scanner.nextDouble();
@@ -14,3 +14,19 @@ public class AOC {
     }
 }
 
+2.AREA OF A TRIALGLE
+import java.util.Scanner;
+
+public calss AOT{
+  public static void main (String[] args){
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Enter the base:");
+    double base = Scanner.nextDouble();
+    System.out.println("Enter the height:");
+    double height = Scanner.nextDouble();
+
+    Area = 1/2(base*height);
+    System.out.println("area of the triangle:" + Area);
+  }
+}
