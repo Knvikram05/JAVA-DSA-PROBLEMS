@@ -4,5 +4,9 @@ import java.util.Scanner;
 public class AOC{
   Scanner input = newScanner(System.in);
   System.out.println("Enter the Radius of the Circle:");
+  double radius = Scanner.nextDouble();
+  R = (3.14*radius*radius);
+  System.out.println(" Area of Circle: +R");
+  
   
 }
