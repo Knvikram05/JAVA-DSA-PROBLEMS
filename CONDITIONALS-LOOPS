@@ -2,5 +2,6 @@
 
 import java.util.Scanner;
 public class AOC{
-  Scanner input = newScanner(System.in)
+  Scanner input = newScanner(System.in);
+  System.out.println("Enter the Radius of the Circle:");
 }
