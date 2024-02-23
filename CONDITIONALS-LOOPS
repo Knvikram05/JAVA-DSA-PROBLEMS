@@ -2,5 +2,5 @@
 
 import java.util.Scanner;
 public class AOC{
-  
+  Scanner input = newScanner(System.in)
 }
