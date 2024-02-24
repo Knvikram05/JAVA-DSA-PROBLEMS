@@ -31,3 +31,21 @@ public class AOT {
     }
 }
 
+
+3.AREA OF RECTANGLE
+import java.util.Scanner;
+
+public class AOR{
+  public static void main (sting args[]){
+     Scanner input = new Scanner(System.in);
+
+     System.out.println("Enter the length:");
+     double length = input.nextDouble();
+     System.out.print(Enter the width:);
+     double width = input.nextDouble();
+
+     double Area = (lenght*width);
+     System.out.println("Area of Rectangle" + Area);
+
+  }
+}
