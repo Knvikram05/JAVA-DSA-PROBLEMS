@@ -123,3 +123,20 @@ public class AreaOfEquilateralTriangle {
         System.out.println("Area of the equilateral triangle: " + area);
     }
 }
+
+
+
+8.PERIMETER OF CIRCLE
+import java.util.Scanner;
+
+public class Perimeterofcircle{
+   public static viod main(String[] args){
+      Scanner input = new Scanner(System.in);
+
+      System.out.println("Enter the Diameter:");
+      double diameter = input nextDouble();
+
+      double perimeter = (Math.PI*diameter);
+      System.out.println("perimeter of circle:" + diameter);
+   }
+}
