@@ -163,3 +163,30 @@ public class EquilateralTrianglePerimeter {
     }
 }
 
+10.PERIMETER OF PARLLELOGRAM
+
+import java.util.Scanner;
+
+public class ParallelogramPerimeter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the parallelogram: ");
+        double length = scanner.nextDouble();
+
+        System.out.print("Enter the breadth of the parallelogram: ");
+        double breadth = scanner.nextDouble();
+
+        double perimeter = calculatePerimeter(length, breadth);
+        System.out.println("Perimeter of the parallelogram: " + perimeter);
+
+        scanner.close();
+    }
+
+    public static double calculatePerimeter(double length, double breadth) {
+        return 2 * (length + breadth);
+    }
+}
+
+
+11.PERIMETER OF RECTANGLE
