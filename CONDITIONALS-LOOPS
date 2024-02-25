@@ -190,3 +190,30 @@ public class ParallelogramPerimeter {
 
 
 11.PERIMETER OF RECTANGLE
+
+import java.util.Scanner;
+
+public class RectanglePerimeter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+
+        double perimeter = calculatePerimeter(length, width);
+        System.out.println("Perimeter of the rectangle: " + perimeter);
+
+        scanner.close();
+    }
+
+    public static double calculatePerimeter(double length, double width) {
+        return 2 * (length + width);
+    }
+}
+
+12.PERIMETER OF SQUARE
+
+
