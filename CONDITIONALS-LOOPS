@@ -216,4 +216,27 @@ public class RectanglePerimeter {
 
 12.PERIMETER OF SQUARE
 
+import java.util.Scanner;
+
+public class SquarePerimeter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of a side of the square: ");
+        double side = scanner.nextDouble();
+
+        double perimeter = calculatePerimeter(side);
+        System.out.println("Perimeter of the square: " + perimeter);
+
+        scanner.close();
+    }
+
+    public static double calculatePerimeter(double side) {
+        return 4 * side;
+    }
+}
+
+13.PERIMETER OF RHOMBUS
+
+
 
