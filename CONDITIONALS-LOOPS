@@ -11,7 +11,7 @@ public class AOC {
         
         double area = Math.PI * radius * radius;
         System.out.println("Area of Circle: " + area);  
-    }
+    } 
 }
 
 2.AREA OF A TRIALGLE
