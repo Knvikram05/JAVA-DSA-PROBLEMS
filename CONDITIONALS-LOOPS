@@ -63,7 +63,7 @@ public class AOI {
         System.out.println("Enter the height:");
         double height = input.nextDouble();
 
-        double area = 0.5 * (base * height);
+        double area = 0.5 * (base * height); 
         System.out.println("Area of the isosceles triangle: " + area);
     }
 }
