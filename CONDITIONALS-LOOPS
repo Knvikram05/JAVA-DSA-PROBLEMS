@@ -27,7 +27,7 @@ public class AOT {
         double height = input.nextDouble(); 
 
         double area = 0.5 * (base * height);
-        System.out.println("Area of the triangle: " + area);  
+        System.out.println("Area of the triangle: " + area);   
     }
 }
 
