@@ -136,7 +136,7 @@ public class Perimeterofcircle{
       System.out.println("Enter the Diameter:");
       double diameter = input nextDouble();
 
-      double perimeter = (Math.PI*diameter);
+      double perimeter = (Math.PI*diameter); 
       System.out.println("perimeter of circle:" + diameter);
    }
 }
