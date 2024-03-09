@@ -22,7 +22,7 @@ public class AOT {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter the base:"); 
-        double base = input.nextDouble(); 
+        double base = input.nextDouble();
         System.out.println("Enter the height:"); 
         double height = input.nextDouble(); 
 
