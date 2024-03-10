@@ -33,7 +33,7 @@ public class AOT {
 
 
 3.AREA OF RECTANGLE
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class AOR {
     public static void main(String[] args) {
