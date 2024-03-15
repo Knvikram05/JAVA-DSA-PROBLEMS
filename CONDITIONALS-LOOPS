@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class AOT {
     public static void main(String[] args) { 
         Scanner input = new Scanner(System.in);   
-    
+     
         System.out.println("Enter the base:"); 
         double base = input.nextDouble();
         System.out.println("Enter the height:");
