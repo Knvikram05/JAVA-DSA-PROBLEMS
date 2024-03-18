@@ -47,5 +47,42 @@ public class ElectricityBillCalculator {
     }
 }
 
+// calculate the average of N number 
+
+import java.util.Scanner;
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the number of elements from the user
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        
+        // Create an array to store the elements
+        double[] numbers = new double[n];
+        
+        // Get the elements from the user
+        System.out.println("Enter the numbers:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextDouble();
+        }
+        
+        // Calculate the sum of the numbers
+        double sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += numbers[i];
+        }
+        
+        // Calculate the average
+        double average = sum / n;
+        
+        System.out.println("Average of the numbers is: " + average);
+        
+        scanner.close();
+    }
+}
+
+
 
 
