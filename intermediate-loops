@@ -83,6 +83,36 @@ public class AverageCalculator {
     }
 }
 
+// calculate discount of products
+
+import java.util.Scanner;
+
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the original price of the product from the user
+        System.out.print("Enter the original price of the product: ");
+        double originalPrice = scanner.nextDouble();
+        
+        // Get the percentage discount from the user
+        System.out.print("Enter the percentage discount: ");
+        double discountPercentage = scanner.nextDouble();
+        
+        // Calculate the discount amount
+        double discountAmount = (discountPercentage / 100) * originalPrice;
+        
+        // Calculate the discounted price
+        double discountedPrice = originalPrice - discountAmount;
+        
+        System.out.println("Discounted amount: " + discountAmount);
+        System.out.println("Discounted price: " + discountedPrice);
+        
+        scanner.close();
+    }
+}
+
+
 
 
 
