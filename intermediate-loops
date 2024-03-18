@@ -22,6 +22,8 @@ public class Factorial {
     }
 }
 
+// calculate electrical bill
+
 import java.util.Scanner;
 
 public class ElectricityBillCalculator {
