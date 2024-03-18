@@ -22,4 +22,28 @@ public class Factorial {
     }
 }
 
+import java.util.Scanner;
+
+public class ElectricityBillCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the rate per unit from the user
+        System.out.print("Enter the rate per unit of electricity (in rupees): ");
+        double ratePerUnit = scanner.nextDouble();
+        
+        // Get the total number of units consumed from the user
+        System.out.print("Enter the total number of units consumed: ");
+        double unitsConsumed = scanner.nextDouble();
+        
+        // Calculate the electricity bill
+        double electricityBill = ratePerUnit * unitsConsumed;
+        
+        System.out.println("Electricity bill: " + electricityBill + " rupees");
+        
+        scanner.close();
+    }
+}
+
+
 
