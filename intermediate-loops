@@ -172,7 +172,29 @@ public class CommissionPercentageCalculator {
     }
 }
 
-//Power In Java
+//Power In Javapublic class PowerCalculator {
+    public static void main(String[] args) {
+        double base = 3;
+        double exponent = 4;
+        
+        double result = calculatePower(base, exponent);
+        
+        System.out.println("Result: " + result);
+    }
+    
+    public static double calculatePower(double base, double exponent) {
+        double result = 1;
+        
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        
+        return result;
+    }
+}
+
+
+
 
 
 
