@@ -149,6 +149,30 @@ public class DistanceCalculator {
 
 //Calculate Commission Percentage
 
+import java.util.Scanner;
+
+public class CommissionPercentageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the total sales amount from the user
+        System.out.print("Enter the total sales amount: ");
+        double totalSalesAmount = scanner.nextDouble();
+        
+        // Get the commission earned from the user
+        System.out.print("Enter the commission earned: ");
+        double commissionEarned = scanner.nextDouble();
+        
+        // Calculate the commission percentage
+        double commissionPercentage = (commissionEarned / totalSalesAmount) * 100;
+        
+        System.out.println("Commission Percentage: " + commissionPercentage + "%");
+        
+        scanner.close();
+    }
+}
+
+
 
 
 
