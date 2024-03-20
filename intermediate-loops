@@ -172,7 +172,9 @@ public class CommissionPercentageCalculator {
     }
 }
 
-//Power In Javapublic class PowerCalculator {
+// power in java
+
+Power In Javapublic class PowerCalculator {
     public static void main(String[] args) {
         double base = 3;
         double exponent = 4;
