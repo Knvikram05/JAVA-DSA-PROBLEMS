@@ -376,6 +376,38 @@ public class CompoundInterestCalculator {
     }
 }
 
+// Calculate Average Marks
+
+import java.util.Scanner;
+
+public class AverageMarksCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the number of subjects from the user
+        System.out.print("Enter the number of subjects: ");
+        int numSubjects = scanner.nextInt();
+        
+        // Initialize variables
+        int totalMarks = 0;
+        
+        // Get the marks for each subject from the user
+        for (int i = 1; i <= numSubjects; i++) {
+            System.out.print("Enter the marks for subject " + i + ": ");
+            int marks = scanner.nextInt();
+            totalMarks += marks;
+        }
+        
+        // Calculate the average marks
+        double averageMarks = (double) totalMarks / numSubjects;
+        
+        System.out.println("Average marks: " + averageMarks);
+        
+        scanner.close();
+    }
+}
+
+
 
 
 
