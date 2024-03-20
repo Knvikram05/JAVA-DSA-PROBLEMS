@@ -297,6 +297,84 @@ public class CGPACalculator {
         scanner.close();
     }
 }
+// import java.util.Scanner;
+
+public class CGPACalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the number of subjects from the user
+        System.out.print("Enter the number of subjects: ");
+        int numSubjects = scanner.nextInt();
+        
+        // Arrays to store grade points and credits of each subject
+        double[] gradePoints = new double[numSubjects];
+        int[] credits = new int[numSubjects];
+        
+        // Get grade points and credits for each subject
+        for (int i = 0; i < numSubjects; i++) {
+            System.out.println("Subject " + (i + 1) + ":");
+            System.out.print("Enter grade points: ");
+            gradePoints[i] = scanner.nextDouble();
+            System.out.print("Enter credits: ");
+            credits[i] = scanner.nextInt();
+        }
+        
+        // Calculate total grade points and total credits
+        double totalGradePoints = 0;
+        int totalCredits = 0;
+        for (int i = 0; i < numSubjects; i++) {
+            totalGradePoints += gradePoints[i] * credits[i];
+            totalCredits += credits[i];
+        }
+        
+        // Calculate CGPA
+        double cgpa = totalGradePoints / totalCredits;
+        
+        System.out.println("CGPA: " + cgpa);
+        
+        scanner.close();
+    }
+}
+
+// Compound Interest Java Program
+
+import java.util.Scanner;
+
+public class CompoundInterestCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the principal amount from the user
+        System.out.print("Enter the principal amount: ");
+        double principal = scanner.nextDouble();
+        
+        // Get the annual interest rate from the user
+        System.out.print("Enter the annual interest rate (as a percentage): ");
+        double annualInterestRate = scanner.nextDouble();
+        
+        // Get the number of times the interest is compounded per year from the user
+        System.out.print("Enter the number of times the interest is compounded per year: ");
+        int compoundFrequency = scanner.nextInt();
+        
+        // Get the time period in years from the user
+        System.out.print("Enter the time period in years: ");
+        double years = scanner.nextDouble();
+        
+        // Calculate the compound interest
+        double compoundInterest = calculateCompoundInterest(principal, annualInterestRate, compoundFrequency, years);
+        
+        System.out.println("Compound Interest: " + compoundInterest);
+        
+        scanner.close();
+    }
+    
+    public static double calculateCompoundInterest(double principal, double annualInterestRate, int compoundFrequency, double years) {
+        double rate = annualInterestRate / 100;
+        double amount = principal * Math.pow(1 + (rate / compoundFrequency), compoundFrequency * years);
+        return amount - principal;
+    }
+}
 
 
 
