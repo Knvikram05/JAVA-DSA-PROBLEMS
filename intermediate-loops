@@ -224,6 +224,39 @@ public class DepreciationCalculator {
 
 //Calculate Batting Average
 
+import java.util.Scanner;
+
+public class BattingAverageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the total runs scored from the user
+        System.out.print("Enter the total runs scored: ");
+        int totalRuns = scanner.nextInt();
+        
+        // Get the total number of times dismissed from the user
+        System.out.print("Enter the total number of times dismissed: ");
+        int timesDismissed = scanner.nextInt();
+        
+        // Calculate the batting average
+        double battingAverage = calculateBattingAverage(totalRuns, timesDismissed);
+        
+        System.out.println("Batting Average: " + battingAverage);
+        
+        scanner.close();
+    }
+    
+    public static double calculateBattingAverage(int totalRuns, int timesDismissed) {
+        if (timesDismissed == 0) {
+            // Avoid division by zero
+            return 0;
+        } else {
+            return (double) totalRuns / timesDismissed;
+        }
+    }
+}
+
+
 
 
 
