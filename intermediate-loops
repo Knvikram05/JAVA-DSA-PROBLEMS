@@ -197,6 +197,32 @@ Power In Javapublic class PowerCalculator {
 
 // Calculate Depreciation of Value
 
+import java.util.Scanner;
+
+public class DepreciationCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the initial value, salvage value, and useful life from the user
+        System.out.print("Enter the initial value of the asset: ");
+        double initialValue = scanner.nextDouble();
+        
+        System.out.print("Enter the salvage value of the asset: ");
+        double salvageValue = scanner.nextDouble();
+        
+        System.out.print("Enter the useful life of the asset (in years): ");
+        int usefulLife = scanner.nextInt();
+        
+        // Calculate the depreciation
+        double depreciation = (initialValue - salvageValue) / usefulLife;
+        
+        System.out.println("Annual Depreciation: " + depreciation);
+        
+        scanner.close();
+    }
+}
+
+
 
 
 
