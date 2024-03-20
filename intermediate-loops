@@ -195,6 +195,8 @@ Power In Javapublic class PowerCalculator {
     }
 }
 
+// Calculate Depreciation of Value
+
 
 
 
