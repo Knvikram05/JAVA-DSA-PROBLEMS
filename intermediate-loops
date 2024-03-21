@@ -19,7 +19,7 @@ public class Factorial {
             return 1;
         else
             return n * calculateFactorial(n - 1); 
-    }
+    } 
 }
 
 // calculate electrical bill
