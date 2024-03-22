@@ -512,6 +512,54 @@ public class CombinationPermutationCalculator {
     }
 }
 
+//Reverse A String In Java
+
+import java.util.Scanner;
+
+public class StringReversal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the string from the user
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+        
+        // Method 1: Using a loop
+        String reversedString1 = reverseStringUsingLoop(inputString);
+        System.out.println("Reversed string using loop: " + reversedString1);
+        
+        // Method 2: Using StringBuilder
+        String reversedString2 = reverseStringUsingStringBuilder(inputString);
+        System.out.println("Reversed string using StringBuilder: " + reversedString2);
+        
+        // Method 3: Using StringBuffer
+        String reversedString3 = reverseStringUsingStringBuffer(inputString);
+        System.out.println("Reversed string using StringBuffer: " + reversedString3);
+        
+        scanner.close();
+    }
+    
+    // Method 1: Using a loop
+    public static String reverseStringUsingLoop(String str) {
+        String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+        return reversed;
+    }
+    
+    // Method 2: Using StringBuilder
+    public static String reverseStringUsingStringBuilder(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+    
+    // Method 3: Using StringBuffer
+    public static String reverseStringUsingStringBuffer(String str) {
+        return new StringBuffer(str).reverse().toString();
+    }
+}
+
+
 
 
 
