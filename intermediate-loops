@@ -472,6 +472,47 @@ public class ArmstrongNumber {
 
 // Find Ncr & Npr
 
+import java.util.Scanner;
+
+public class CombinationPermutationCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get the values of N and R from the user
+        System.out.print("Enter the value of N: ");
+        int N = scanner.nextInt();
+        System.out.print("Enter the value of R: ");
+        int R = scanner.nextInt();
+        
+        // Calculate N choose R (Combinations)
+        long nCr = calculateCombination(N, R);
+        System.out.println("Combinations (N choose R): " + nCr);
+        
+        // Calculate N permute R (Permutations)
+        long nPr = calculatePermutation(N, R);
+        System.out.println("Permutations (N permute R): " + nPr);
+        
+        scanner.close();
+    }
+    
+    public static long calculateCombination(int N, int R) {
+        return factorial(N) / (factorial(R) * factorial(N - R));
+    }
+    
+    public static long calculatePermutation(int N, int R) {
+        return factorial(N) / factorial(N - R);
+    }
+    
+    public static long factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+}
+
+
 
 
 
