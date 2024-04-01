@@ -12,7 +12,7 @@ public class Factorial {
         System.out.println("Factorial of " + number + " is: " + factorial);
         scanner.close(); 
     }
-       
+    
     public static long calculateFactorial(int n) { 
         if (n == 0) 
             return 1; 
