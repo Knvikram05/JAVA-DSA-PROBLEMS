@@ -189,7 +189,6 @@ Power In Javapublic class PowerCalculator {
 }
 
 // Calculate Depreciation of Value
-
 import java.util.Scanner;
 
 public class DepreciationCalculator {
