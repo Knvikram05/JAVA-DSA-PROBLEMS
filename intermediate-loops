@@ -21,7 +21,6 @@ public class Factorial {
 }
 
 // calculate electrical bill
-
 import java.util.Scanner;
 
 public class ElectricityBillCalculator {
@@ -46,7 +45,6 @@ public class ElectricityBillCalculator {
 }
 
 // calculate the average of N number 
-
 import java.util.Scanner;
 
 public class AverageCalculator {
