@@ -80,7 +80,6 @@ public class AverageCalculator {
 }
 
 // calculate discount of products
-
 import java.util.Scanner;
 
 public class DiscountCalculator {
@@ -109,7 +108,6 @@ public class DiscountCalculator {
 }
 
 //calculate diatance between tow ponts 
-
 import java.util.Scanner;
 
 public class DistanceCalculator {
