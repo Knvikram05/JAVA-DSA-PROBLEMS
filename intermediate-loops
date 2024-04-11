@@ -28,7 +28,7 @@ public class ElectricityBillCalculator {
         Scanner scanner = new Scanner(System.in);
         
         // Get the rate per unit from the user
-        System.out.print("Enter the rate per unit of electricity (in rupees): ");
+        System.out.print("Enter the rate per unit of electricity (in rupees): "); 
         double ratePerUnit = scanner.nextDouble();
         
         // Get the total number of units consumed from the user
