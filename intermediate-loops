@@ -25,7 +25,7 @@ import java.util.Scanner;
 
 public class ElectricityBillCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); 
         
         // Get the rate per unit from the user
         System.out.print("Enter the rate per unit of electricity (in rupees): "); 
