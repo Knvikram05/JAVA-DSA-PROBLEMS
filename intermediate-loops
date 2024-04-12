@@ -12,7 +12,7 @@ public class Factorial {
         scanner.close();
     }
     
-    public static long calculateFactorial(int n) { 
+    public static long calculateFactorial(int n) {
         if (n == 0) 
             return 1; 
         else 
