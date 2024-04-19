@@ -9,7 +9,7 @@ public class Factorial {
         
         long factorial = calculateFactorial(number); 
         System.out.println("Factorial of " + number + " is: " + factorial);
-        scanner.close();
+        scanner.close(); 
     }
     
     public static long calculateFactorial(int n) {
