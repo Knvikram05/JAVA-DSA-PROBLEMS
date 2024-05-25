@@ -72,7 +72,7 @@ public class AverageCalculator {
         // Calculate the average
         double average = sum / n;
         
-        System.out.println("Average of the numbers is: " + average); 
+        System.out.println("Average of the numbers is: " + average);  
         
         scanner.close();
     }
